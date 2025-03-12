@@ -73,7 +73,7 @@ char alerta[]="Reconhecedor de números em notação científica\n\t";
 					return REAL;
 					}
 
-.|;|\^|\-|\+|\/|\*|= {/* Ação para qualquer outro elemento de entrada */
+.|;|\^|\/|\*|= {/* Ação para qualquer outro elemento de entrada */
 					printf("%s %s ==> elemento não reconhecido \n", alerta, yytext);
 					return INVALIDO;
 					}
